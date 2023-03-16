@@ -5,6 +5,7 @@ import { ResumePage } from './pages/resume'
 import { PortfolioPage } from './pages/portfolio'
 import { ContactsPage } from './pages/contacts'
 import { Layout } from './components/layout'
+import { BlogPage } from './pages/blog'
 
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
           <Route 
             path="/contacts"
             element={<ContactsPage />}
+          />
+          <Route 
+            path="/blog"
+            element={<BlogPage />}
           />
         </Route>
         
