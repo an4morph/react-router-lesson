@@ -6,6 +6,7 @@ import { PortfolioPage } from './pages/portfolio'
 import { ContactsPage } from './pages/contacts'
 import { Layout } from './components/layout'
 import { BlogPage } from './pages/blog'
+import { BlogItemPage } from './pages/blog/item'
 
 
 function App() {
@@ -32,6 +33,10 @@ function App() {
           <Route 
             path="/blog"
             element={<BlogPage />}
+          />
+          <Route 
+            path="/blog/:id"
+            element={<BlogItemPage />}
           />
         </Route>
         
